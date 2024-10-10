@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build and run file in Windows",
+			"command": "go run",
+			"args": [
+				"${fileDirname}"
+			],
+			"group": "build",
+			"detail": "build and run file in Windows"
+		},
+		{
+			"type": "shell",
+			"label": "build file as Linux",
+			"command": "${fileDirname}/linux.bat",
+			"group": "build",
+			"detail": "build linux amd64 file"
+		}
+	]
+}
